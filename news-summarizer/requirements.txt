@@ -6,3 +6,4 @@ nltk
 sumy
 gtts
 anyio
+beautifulsoup4
