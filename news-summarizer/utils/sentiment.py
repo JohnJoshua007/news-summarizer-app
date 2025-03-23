@@ -1,5 +1,13 @@
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
+import os
+
+NLTK_DIR = "/app/nltk_data"
+os.makedirs(NLTK_DIR, exist_ok=True)  
+nltk.data.path.append(NLTK_DIR)      
+
+
+nltk.download('vader_lexicon', download_dir=NLTK_DIR)
 
 nltk.download('vader_lexicon')
 
